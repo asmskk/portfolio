@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Gill Sans, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+body{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    display: inline-block;
+    margin: 20px;
+    font-size: 33px;
+    font-weight: bold;
+    
+}
+
+.container a{
+    color: rgba(0, 0, 0, 0.753);
+    border-top: 5px solid cadetblue;
+    border-bottom: 5px solid cadetblue;
+    padding-bottom: 4px;
+}
+
+
+.contact{
+    float: right;
+    margin: 20px 20px 0 0;
+    padding: 7px 20px;
+    font-size: 21px;
+    border-radius: 50px;
+    color: rgba(0, 0, 0, 0.747);
+    background-image: linear-gradient(to right,rgb(166, 213, 214), cadetblue);
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li{
+    padding: 10px;
+    float: left;
+}
+
+nav ul li a{
+    color: rgba(0, 0, 0, 0.753);
+    font-size: 20px;
+    border-bottom: 3px dashed cadetblue;
+}
+
+main{
+    margin-top: 70px;
+}
+
+main h1, main p{
+    text-align: center;
+
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+}
+
+.hire-btn{
+    height: 200px;
+    text-align: center;
+}
+
+.hire-btn a{
+    background-image: linear-gradient(to right,rgb(166, 213, 214), cadetblue);
+    padding: 30px;
+    line-height: 200px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 15px rgba(95, 158, 160, 0.658);
+    color: rgba(0, 0, 0, 0.61);
+    position: relative;
+}
+
+.hire-btn a:active{
+    
+    top: 15px;
+    box-shadow: none;
+}
+
+.copyright{
+    position: absolute;
+    bottom: 5px;
+    left: 42%;
+    text-align: center;
+}
+
