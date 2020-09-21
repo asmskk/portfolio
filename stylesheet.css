@@ -20,16 +20,17 @@ header{
 .container{
     display: inline-block;
     margin: 20px;
-    font-size: 33px;
-    font-weight: bold;
+
     
 }
 
-.container a{
+.logo{
     color: rgba(0, 0, 0, 0.753);
     border-top: 5px solid cadetblue;
     border-bottom: 5px solid cadetblue;
     padding-bottom: 4px;
+    font-size: clamp(33px, 5vw, 45px);
+    font-weight: bold;
 }
 
 
@@ -43,17 +44,17 @@ header{
     background-image: linear-gradient(to right,rgb(166, 213, 214), cadetblue);
 }
 
-nav ul{
+.menu ul{
     display: flex;
     justify-content: space-around;
 }
 
-nav ul li{
+.menu ul li{
     padding: 10px;
     float: left;
 }
 
-nav ul li a{
+.menu ul li a{
     color: rgba(0, 0, 0, 0.753);
     font-size: 20px;
     border-bottom: 3px dashed cadetblue;
@@ -108,3 +109,10 @@ footer{
     text-align: center;
 }
 
+@media screen and (min-width: 780px){
+
+}
+
+@media screen and (min-width: 1000px){
+    
+}
