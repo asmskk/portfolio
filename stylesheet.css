@@ -9,6 +9,7 @@
 }
 
 body{
+    height: auto;
     width: 100%;
     margin-bottom: 62px;
 }
@@ -30,7 +31,7 @@ header{
     border-top: 5px solid cadetblue;
     border-bottom: 5px solid cadetblue;
     padding-bottom: 4px;
-    font-size: clamp(33px, 5vw, 45px);
+    font-size: clamp(33px, 7vw, 45px);
     font-weight: bold;
 }
 
@@ -41,7 +42,8 @@ header{
     padding: 7px 20px;
     font-size: 21px;
     border-radius: 50px;
-    color: rgba(0, 0, 0, 0.747);
+    /* color: rgba(0, 0, 0, 0.747); */
+    color: snow;
     background-image: linear-gradient(to right,rgb(166, 213, 214), cadetblue);
 }
 
@@ -52,7 +54,7 @@ header{
     width: 100%;
     height: 60px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-    background-color: rgba(95, 158, 160, 0.308);
+    background-color: rgb(193, 228, 230);
     display: flex;
     overflow-x: auto;
 }
@@ -75,22 +77,23 @@ header{
     color: rgba(0, 0, 0, 0.671);
 }
 
-.link:hover{
-    background-color: #eeeeee;
-}
 
+.introduce{
+    text-align: left;
+}
 
 main{
-    margin-top: 10px;
+    margin: 35px;
 }
 
-main h1, main p{
+main h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: clamp(25px, 7vw, 40px);
+}
+
+.seal{
+    width: 100%;
     text-align: center;
-}
-
-img{
-    width: 50%;
-    height: auto;
 }
 
 .title{
@@ -105,26 +108,27 @@ footer{
 }
 
 .hire-btn{
-    height: 200px;
     text-align: center;
+    
 }
 
 .hire-btn a{
-    background-image: linear-gradient(to right,rgb(166, 213, 214), cadetblue);
-    padding: 30px;
     line-height: 200px;
     font-size: 25px;
-    font-weight: bold;
-    border-radius: 10px;
-    box-shadow: 0 15px rgba(95, 158, 160, 0.658);
-    color: rgba(0, 0, 0, 0.61);
-    position: relative;
+    border-radius: 50px;
+    background-image: linear-gradient(to right,rgb(153, 205, 206), cadetblue, rgb(153, 205, 206));
+    height: 40px;
+    text-align: center;
+    padding: 6px 100px;
+    width: 90%;
+    color: snow;
+    cursor: pointer;
+    background-size: 200%;
+    transition: 0.6s;
 }
 
-.hire-btn a:active{
-    
-    top: 15px;
-    box-shadow: none;
+.hire-btn a:hover{
+    background-position: right;
 }
 
 .copyright{
@@ -135,7 +139,6 @@ footer{
 /* profile page */
 
 .profile{
-    margin: 20px 0;
     height: auto;
 }
 
@@ -150,8 +153,9 @@ strong{
 }
 
 /* contact-form */
+
 .contact-form{
-    background-color: cadetblue;
+    background-image: linear-gradient( cadetblue, rgb(182, 223, 224));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,7 +167,7 @@ strong{
     background-color: whitesmoke;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 400px;
+    width: 350px;
     max-width: 100%;
 }
 
@@ -226,6 +230,50 @@ strong{
     padding: 10px;
     font-family: inherit;
     cursor: pointer;
+}
+
+/* contact-form end*/
+
+/* skill */
+
+.skill ul{
+    font-size: clamp(19px, 3vw, 30px);
+}
+
+.skill ul li{
+    height: 50px;
+}
+
+.html{
+    color: rgb(240, 101, 41);
+}
+
+.css{
+    color: rgb(41, 101, 241);
+}
+
+.js{
+    color: rgb(240, 219, 79);
+}
+
+.react{
+    color: rgb(97, 219, 251);
+}
+
+.node{
+    color: rgb(104, 160, 99);
+}
+
+.vue{
+    color: rgb(65, 184, 131);
+}
+
+.aws{
+    color: rgb(255, 153, 0);
+}
+
+.sql{
+    color: rgb(0, 117, 143);
 }
 
 @media screen and (min-width: 780px){
