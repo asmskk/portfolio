@@ -14,6 +14,11 @@ body{
     margin-bottom: 62px;
 }
 
+.dark{
+    background-color: #202C35;
+    color: cornsilk;
+}
+
 header{
     width: 100%;
     height: auto;
@@ -35,6 +40,52 @@ header{
     font-weight: bold;
 }
 
+.night{
+    
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox:checked + .label .switch {
+    transform: translateX(24px);
+}
+
+.label{
+    background: rgba(17, 17, 17, 0.486);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    height: 26px;
+    width: 50px;
+}
+
+.switch{
+    background-color:rgb(199, 200, 206);
+    position: absolute;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transition: transform 0.1s linear;
+}
+
+.fa-moon{
+    color: #f1c40f;
+}
+
+.fa-sun{
+    color: #f39c12;
+}
 
 .contact{
     float: right;
@@ -42,7 +93,6 @@ header{
     padding: 7px 20px;
     font-size: 21px;
     border-radius: 50px;
-    /* color: rgba(0, 0, 0, 0.747); */
     color: snow;
     background-image: linear-gradient(to right,rgb(166, 213, 214), cadetblue);
 }
@@ -91,7 +141,7 @@ main h1{
     font-size: clamp(25px, 7vw, 40px);
 }
 
-.seal{
+.asm{
     width: 100%;
     text-align: center;
 }
@@ -150,7 +200,19 @@ footer{
 
 strong{
     color: cadetblue;
+    
 }
+
+.profile p{
+    font-size: 20px;
+}
+
+.resume a{
+    color:cadetblue;
+    
+}
+
+/* profile-end */
 
 /* contact-form */
 
@@ -235,14 +297,36 @@ strong{
 /* contact-form end*/
 
 /* skill */
-
-.skill ul{
-    font-size: clamp(19px, 3vw, 30px);
+.progress{
+    width: 100%;
+    background-color: rgba(82, 184, 158, 0.178);
+    border-radius: 20px;
+    margin: 18px 0px;
+    height: 25px;
 }
 
-.skill ul li{
-    height: 50px;
+.progress-bar{
+    height: 100%;
+    width: 0;
+    background-color: rgba(88, 180, 168, 0.425);
+    border-radius: 20px;
+    position: relative;
+    transition: all 1.5s;
 }
+
+.progress-bar span{
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(131, 130, 133);
+    position: absolute;
+    top: 15%;
+    right: 2%;
+}
+
+.skill{
+    font-size: clamp(17px, 3vw, 35px);
+}
+
 
 .html{
     color: rgb(240, 101, 41);
@@ -275,6 +359,10 @@ strong{
 .sql{
     color: rgb(0, 117, 143);
 }
+
+
+
+
 
 @media screen and (min-width: 780px){
 
