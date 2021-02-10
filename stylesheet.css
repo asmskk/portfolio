@@ -50,13 +50,14 @@ header{
     color: rgba(0, 0, 0, 0.753);
     border-top: 5px solid cadetblue;
     border-bottom: 5px solid cadetblue;
-    padding-bottom: 4px;
-    font-size: clamp(33px, 7vw, 45px);
-    font-weight: bold;
+    padding-bottom: 7px;
+    /* font-size: clamp(33px, 7vw, 45px); */
+    font-size: 33px;
+    font-weight: bolder;
 }
 
 .night{
-    margin: 25px;
+    margin: 33px;
 }
 
 .checkbox{
@@ -148,7 +149,7 @@ header{
 }
 
 main{
-    margin: 30px;
+    margin: 20px;
 }
 
 main h1{
@@ -164,8 +165,8 @@ main h1{
 
 .title{
     display: inline-block;
-    border-bottom: 3px dashed cadetblue;
-    margin-bottom: 30px;
+    margin: 0 10px 25px 15px;
+    border-bottom: 2px dashed rgba(88, 87, 87, 0.726);
 }
 
 footer{
@@ -179,14 +180,14 @@ footer{
 }
 
 .hire-btn a{
-    line-height: 200px;
+    line-height: 120px;
     font-size: 25px;
     border-radius: 50px;
     background-image: linear-gradient(to right,rgb(153, 205, 206), cadetblue, rgb(153, 205, 206));
     height: 40px;
     text-align: center;
-    padding: 6px 100px;
-    width: 90%;
+    padding: 6px 120px;
+    width: 100%;
     color: snow;
     cursor: pointer;
     background-size: 200%;
@@ -207,51 +208,74 @@ footer{
 
 
 .profile{
-    height: auto;
-}
-
-.profile ul li{
-    padding-bottom: 15px;
-    color: rgb(95, 94, 94);
-    font-size: 18px;
-}
-
-strong{
-    color: cadetblue;
-    
-}
-
-.profile p{
-    font-size: 20px;
-}
-
-.resume {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.resume a{
-    padding: 40px 30px;
-    font-size: 18px;
-    text-align: center;
-    border: 2px solid rgba(21, 141, 141, 0.753);
-    border-radius: 6px;
-    color: rgba(0, 0, 0, 0.753);
+    height: 500px;
 }
 
 .frame {
-    padding: 20px 20px;
+    height: 100px;
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
     border: 2px solid rgba(21, 141, 141, 0.753);
     border-radius: 6px;
 }
 
+.frame h4{
+    color: cadetblue;
+    font-size: 16px;
+    margin: 5px;
+}
 
+.frame p{
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.fullname p{
+    font-size: 28px;
+    margin-top: 15px;
+}
 
 .country {
     width: 40%;    
+    display: inline-block;
+}
+
+.country p, .language p{
+    font-size: 20px;
+    margin-top: 18px;
+}
+
+.language {
+    width: 59%; 
+    display: inline;
+    float: right;
+}
+
+.college {
+    font-size: 18px;
+}
+
+.character {
+    width: 59%;
+    font-size: 18px;
+    display: inline;
+    float: left;
+}
+
+.resume a {
+    display: inline;
+    float: right;
+    width: 40%;
+    font-size: 22px;
+    text-align: center;
+    line-height: 97px;
+    color: rgba(0, 0, 0, 0.753);
+    background-color: rgba(119, 180, 184, 0.774);
+    cursor: pointer;
+    border: 2px solid rgba(21, 141, 141, 0.753);
+    border-radius: 6px;
+    margin-bottom: 5px;
 }
 
 /* profile-end */
@@ -359,7 +383,7 @@ strong{
 .progress-bar span{
     font-weight: bold;
     font-size: 14px;
-    color: rgb(131, 130, 133);
+    color: rgb(36, 36, 36);
     position: absolute;
     top: 15%;
     right: 2%;
