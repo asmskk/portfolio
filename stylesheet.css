@@ -148,6 +148,10 @@ header{
     margin: 0 auto;
 }
 
+.hello {
+    font-size: 32px;
+}
+
 main{
     margin: 20px;
 }
@@ -176,17 +180,17 @@ footer{
 
 .hire-btn{
     text-align: center;
-    
+    height: 150px;
 }
 
 .hire-btn a{
-    line-height: 120px;
+    line-height: 150px;
     font-size: 25px;
     border-radius: 50px;
     background-image: linear-gradient(to right,rgb(153, 205, 206), cadetblue, rgb(153, 205, 206));
     height: 40px;
     text-align: center;
-    padding: 6px 120px;
+    padding: 6px 130px;
     width: 100%;
     color: snow;
     cursor: pointer;
