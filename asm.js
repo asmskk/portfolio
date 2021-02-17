@@ -25,6 +25,7 @@ window.addEventListener('load',()=>{
 let darkMode = localStorage.getItem('darkMode');
 const darkModeToggle = document.querySelector('#checkbox');
 
+
 const enableDarkMode = () => {
     document.body.classList.add('dark');
     localStorage.setItem('darkMode', 'enabled');
@@ -35,6 +36,7 @@ const disableDarkMode = () => {
 };
 
 if (darkMode === 'enabled') {
+    document.getElementById('checkbox').checked = true
     enableDarkMode();
 };
 
