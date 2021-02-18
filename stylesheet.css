@@ -6,7 +6,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    
+    color: rgba(0, 0, 0, 0.753);
 }
 
 body{
@@ -16,24 +16,18 @@ body{
     color: rgba(0, 0, 0, 0.753);
 }
 
+/* dark mode */
+
 body.dark {
     background-color: #1c2c29;
+    color: cornsilk; 
+}
+
+body.dark h1, body.dark p, body.dark h2, body.dark small {
     color: cornsilk;
 }
 
-body.dark a {
-    color: cornsilk;
-}
-
-body.dark input {
-    color: cornsilk;
-}
-
-body.dark textarea {
-    color: cornsilk;
-}
-
-body.dark button {
+body.dark a ,body.dark input, body.dark textarea, body.dark button {
     color: cornsilk;
 }
 
@@ -58,6 +52,8 @@ body.dark.label{
     background-color: #1c2c29;
 }
 
+/* dark mode end */
+
 header{
     width: 100%;
     height: 100px;
@@ -70,12 +66,10 @@ header{
 }
 
 .logo{
-    color: rgba(0, 0, 0, 0.753);
     border-top: 5px solid cadetblue;
     border-bottom: 5px solid cadetblue;
     padding-bottom: 7px;
     font-size: clamp(33px, 7vw, 45px);
-    /* font-size: 33px; */
     font-weight: bolder;
 }
 
@@ -122,8 +116,6 @@ header{
     cursor: pointer;
 }
 
-
-
 .fa-moon{
     color: #f1c40f;
     position: absolute;
@@ -161,11 +153,6 @@ header{
     transition: background-color 0.1s ease-in-out;
 }
 
-.link i, span{
-    color: rgba(0, 0, 0, 0.671);
-}
-
-
 .introduce{
     display: flex;
     justify-content: center;
@@ -174,24 +161,20 @@ header{
     margin: 0 auto;
 }
 
-.hello {
-    font-size: 32px;
-}
-
 main{
     margin: 20px;
 }
 
-main h1{
-    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-    font-size: clamp(25px, 7vw, 40px);
+.hello{
+    font-size: clamp(30px, 6vw, 60px);
 }
 
 .photo {
-    width: min(100%, 550px);
     display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 10px;
-    margin: 0 auto;
 }
 
 .title{
@@ -229,9 +212,16 @@ footer{
     background-position: right;
 }
 
-.copyright{
+footer {
+    height: 20px;
+    position: relative;
     text-align: center;
-    
+}
+
+.copyright{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 /* profile page */
@@ -301,7 +291,6 @@ footer{
     font-size: 22px;
     text-align: center;
     line-height: 97px;
-    color: rgba(0, 0, 0, 0.753);
     background-color: rgba(119, 180, 184, 0.774);
     cursor: pointer;
     border: 2px solid rgba(21, 141, 141, 0.753);
@@ -461,15 +450,33 @@ footer{
 
 
 
-@media screen and (min-width: 780px){
+@media screen and (min-width: 520px){
+    .hello {
+        font-size: 50px;
+    }
 
+    .photo {
+        display: block;
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .hire-btn a {
+        padding: 12px 200px;
+    }
+
+    .profile {
+        width: 75%;
+        margin: auto;
+    }
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 980px){
     body {
         width: 90%;
         margin: 0 auto;
-        
+        margin-top: 30px;
     }
     
     .menu{
@@ -477,8 +484,8 @@ footer{
     }
 
     .web-menu {
-        display: flex;
-        justify-content: flex-end;
+        display: initial;
+        text-align: center;
         font-size: 25px;
         width: 1500px;
         height: 100px;
@@ -486,14 +493,62 @@ footer{
     }
 
     .web-menu a {
-        margin-right: 50px
+        margin: 0 30px;
+    }
+
+    .home {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .introduce {
+        margin: 0;
+    }
+
+    .hello {
+        padding: 150px 40px 0 40px;
     }
 
     .photo {
-        float: left;
-        margin-top: 50px;
+        order: 1;
+        display: block;
+        width: 40%;
+        margin-right: auto;
+        margin-left: auto;
+
     }
 
+    .hire-btn{
+        height: 150px;
+    }
+    
+    .hire-btn a{
+        line-height: 150px;
+        font-size: 25px;
+        border-radius: 50px;
+        background-image: linear-gradient(to right,rgb(153, 205, 206), cadetblue, rgb(153, 205, 206));
+        height: 40px;
+        text-align: center;
+        padding: 16px 230px;
+        width: 100%;
+        color: snow;
+        cursor: pointer;
+        background-size: 200%;
+        transition: 0.6s;
+    }
+    
+    .hire-btn a:hover{
+        background-position: right;
+    }
 
+    .profile {
+        width: 55%;
+        margin: auto;
+    }
+    
+    footer {
+        height: 180px;
+    }
 
 }
