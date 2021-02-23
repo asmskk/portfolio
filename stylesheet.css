@@ -14,7 +14,9 @@ body{
     width: 100%;
     margin-bottom: 62px;
     color: rgba(0, 0, 0, 0.753);
+    
 }
+
 
 /* dark mode */
 
@@ -51,6 +53,7 @@ body.dark.label{
 .dark .btn {
     background-color: #1c2c29;
 }
+
 
 /* dark mode end */
 
@@ -166,7 +169,7 @@ main{
 }
 
 .hello{
-    font-size: clamp(30px, 6vw, 60px);
+    font-size: clamp(28px, 6vw, 60px);
 }
 
 .photo {
@@ -181,6 +184,7 @@ main{
     display: inline-block;
     margin: 0 10px 25px 15px;
     border-bottom: 2px dashed rgba(88, 87, 87, 0.726);
+    font-size: clamp(30px, 1vw, 40px);
 }
 
 footer{
@@ -200,7 +204,7 @@ footer{
     background-image: linear-gradient(to right,rgb(153, 205, 206), cadetblue, rgb(153, 205, 206));
     height: 40px;
     text-align: center;
-    padding: 6px 130px;
+    padding: 6px 70px;
     width: 100%;
     color: snow;
     cursor: pointer;
@@ -315,7 +319,7 @@ footer {
     background-color: whitesmoke;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 350px;
+    width: 98%;
     max-width: 100%;
 }
 
@@ -409,8 +413,8 @@ footer {
     right: 2%;
 }
 
-.skill{
-    font-size: clamp(17px, 3vw, 35px);
+.skill p{
+    font-size: clamp(18px, 2vw, 25px);
 }
 
 
@@ -451,6 +455,12 @@ footer {
 
 
 @media screen and (min-width: 520px){
+    
+
+    main {
+        margin-top: 70px;
+    }
+
     .hello {
         font-size: 50px;
     }
@@ -466,13 +476,31 @@ footer {
         padding: 12px 200px;
     }
 
-    .profile {
+    .profile, .skill {
         width: 75%;
         margin: auto;
     }
+
+    /* contactform */
+
+    .contact-container {
+        width: 500px;
+    }
+
+    .form {
+        width: 90%;
+        margin: auto;
+    }
+
+    
+    .contact-form {
+        min-height: 80vh;
+    }
+
+    /* contactform end */
 }
 
-@media screen and (min-width: 980px){
+@media screen and (min-width: 1100px){
     body {
         width: 90%;
         margin: 0 auto;
@@ -500,15 +528,13 @@ footer {
         margin-top: 80px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .introduce {
         margin: 0;
     }
 
-    .hello {
-        padding: 150px 40px 0 40px;
-    }
 
     .photo {
         order: 1;
@@ -542,13 +568,34 @@ footer {
         background-position: right;
     }
 
-    .profile {
+    .profile, .skill{
         width: 55%;
         margin: auto;
     }
+
+    .skill {
+        font-size: 30px;
+    }
+
+    /* contactform */
+
+    .contact-container {
+        width: 800px;
+    }
+
+    .form {
+        width: 70%;
+        margin: auto;
+    }
+
+    .contact-form {
+        min-height: 80vh;
+    }
+
+    /* contactform end */
     
     footer {
-        height: 180px;
+        height: 100px;
     }
 
 }
