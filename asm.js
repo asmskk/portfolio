@@ -1,13 +1,12 @@
 window.addEventListener('load',()=>{
     let progressBars = document.querySelectorAll('.progress-bar');
     let values = [
-        '80%',
+        '90%',
         '80%',
         '60%',
         '50%',
         '40%',
-        '50%',
-        '40%'
+        '30%'
     ];
     progressBars.forEach((progress,index)=>{
         progress.style.width = values[index];
