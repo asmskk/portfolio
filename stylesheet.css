@@ -521,8 +521,14 @@ footer {
         line-height: 100px;
     }
 
-    .web-menu a {
-        margin: 0 30px;
+    .web-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .web-menu ul li {
+        float: left;
+        margin: 0 35px;
     }
 
     .home {
