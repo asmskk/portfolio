@@ -157,6 +157,7 @@ header{
     transition: background-color 0.1s ease-in-out;
 }
 
+
 .introduce{
     display: flex;
     justify-content: center;
@@ -453,7 +454,11 @@ footer {
     color: rgb(0, 117, 143);
 }
 
-
+.coming {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
 
 
 
@@ -532,6 +537,18 @@ footer {
         float: left;
         margin: 0 35px;
     }
+
+    nav a:hover {
+        display: initial;
+        border-bottom: black;
+    }
+
+    nav a.active {
+        background-color: rgba(26, 177, 157, 0.274);
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
 
     .home {
         margin-top: 80px;
