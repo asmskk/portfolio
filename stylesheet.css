@@ -15,7 +15,7 @@ body{
     width: 100%;
     margin-bottom: 62px;
     color: rgba(0, 0, 0, 0.753);
-    
+    user-select: none;
 }
 
 
@@ -536,6 +536,7 @@ footer {
     .web-menu ul li {
         float: left;
         margin: 0 35px;
+        
     }
 
     nav a:hover {
