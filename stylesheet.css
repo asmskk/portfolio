@@ -95,8 +95,6 @@ header{
     background-color: black;
 }
 
-
-
 .label{
     border: 3px solid rgb(198, 198, 199);
     display: flex;
@@ -533,10 +531,13 @@ footer {
         justify-content: center;
     }
 
+    .web-menu ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
     .web-menu ul li {
-        float: left;
         margin: 0 35px;
-        
     }
 
     nav a:hover {
