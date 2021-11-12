@@ -72,7 +72,7 @@ header{
 .logo{
     border-top: 5px solid cadetblue;
     border-bottom: 5px solid cadetblue;
-    padding-bottom: 7px;
+    padding-bottom: 12px;
     font-size: clamp(33px, 7vw, 45px);
     font-weight: bolder;
 }
