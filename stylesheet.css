@@ -536,19 +536,21 @@ footer {
         justify-content: space-between;
     }
 
-    .web-menu ul li {
-        margin: 0 35px;
+    .web-menu ul li a{
+        margin: 20px 35px;
+        line-height: 100px;
     }
 
     nav a:hover {
         display: initial;
-        border-bottom: black;
+        border: black;
     }
 
     nav a.active {
         background-color: rgba(26, 177, 157, 0.274);
         border-radius: 5px;
         padding: 10px;
+        margin: 0 ;
     }
     
 
