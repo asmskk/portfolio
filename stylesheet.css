@@ -625,7 +625,10 @@ footer {
     /* contactform end */
     
     footer {
+        position: fixed;
+        bottom: 0;
         height: 100px;
+        margin-bottom: 5px;
     }
 
 }
