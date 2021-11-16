@@ -574,13 +574,6 @@ footer {
         margin-left: auto;
         margin-top: 50px;
     }
-
-    .hire-btn{
-        height: 150px;
-        position: fixed;
-        left: 31%;
-        bottom: 2%;
-    }
     
     .hire-btn a{
         line-height: 150px;
@@ -608,6 +601,11 @@ footer {
 
     .skill {
         font-size: 30px;
+    }
+
+    .coming {
+        margin-top: 330px;
+        margin-bottom: 300px;
     }
 
     /* contactform */
