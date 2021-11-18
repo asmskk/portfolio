@@ -335,6 +335,10 @@ footer {
     margin: 0;
 }
 
+::placeholder {
+    color: rgba(204, 204, 204, 0.849);
+}
+
 .form{
     padding: 30px 40px;
 }
