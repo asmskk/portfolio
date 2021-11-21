@@ -240,7 +240,7 @@ footer {
 
 .frame {
     height: 100px;
-    margin-bottom: 5px;
+    margin: 2px 1px;
     font-size: 15px;
     text-align: center;
     border: 2px solid rgba(21, 141, 141, 0.753);
@@ -284,24 +284,17 @@ footer {
 }
 
 .character {
-    width: 59%;
+    width: 49%;
     font-size: 18px;
     display: inline;
     float: left;
 }
 
-.resume a {
+.hobby {
+    width: 50%;
+    font-size: 18px;
     display: inline;
     float: right;
-    width: 40%;
-    font-size: 22px;
-    text-align: center;
-    line-height: 97px;
-    background-color: rgba(119, 180, 184, 0.774);
-    cursor: pointer;
-    border: 2px solid rgba(21, 141, 141, 0.753);
-    border-radius: 6px;
-    margin-bottom: 5px;
 }
 
 /* profile-end */
