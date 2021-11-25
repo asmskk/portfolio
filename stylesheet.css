@@ -180,6 +180,10 @@ main{
     margin-top: 10px;
 }
 
+.photo:hover {
+    cursor: pointer;
+}
+
 .title{
     display: inline-block;
     margin: 0 10px 25px 15px;
