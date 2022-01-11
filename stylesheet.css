@@ -240,10 +240,12 @@ footer {
 
 .profile{
     height: 500px;
+    width: 100%;
 }
 
 .frame {
-    height: 100px;
+    height: auto;
+    padding-bottom: 18px;
     margin: 2px 1px;
     font-size: 15px;
     text-align: center;
@@ -268,7 +270,7 @@ footer {
 }
 
 .country {
-    width: 40%;    
+    width: 48%;    
     display: inline-block;
 }
 
@@ -278,12 +280,13 @@ footer {
 }
 
 .language {
-    width: 59%; 
+    width: 50%; 
     display: inline;
     float: right;
 }
 
-.college {
+.college .frame{
+    width: 40%;
     font-size: 18px;
 }
 
@@ -295,7 +298,7 @@ footer {
 }
 
 .hobby {
-    width: 50%;
+    width: 49%;
     font-size: 18px;
     display: inline;
     float: right;
@@ -461,7 +464,7 @@ footer {
 
 
 
-@media screen and (min-width: 520px){
+@media screen and (min-width: 580px){
     
 
     main {
